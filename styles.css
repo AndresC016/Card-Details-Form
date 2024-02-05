@@ -5,3 +5,119 @@
     margin: 0;
     font-family: 'Space Grotesk', sans-serif;
 }
+
+body {
+    font-size: 18px;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+}
+
+.interface-cont {
+    display: flex;
+    max-height: 100vh;
+}
+
+.credit-card_img {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    list-style: none;
+    color: var(--White);
+}
+.credit-card_img img {
+    width: 340px;
+}
+
+.first-card {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+}
+
+.second-card {
+    position: absolute;
+    top: 54%;
+    left: 23.5%;
+}
+.second-card p {
+    position: absolute;
+    bottom: 48%;
+    right: 12%;
+    font-size: .63rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.infront {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 87%;
+    height: 75%;
+    box-sizing: border-box;
+}
+
+.circles {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.circles div:nth-child(1) {
+    width: 34px;
+    height: 34px;
+    background-color: var(--White);
+    border-radius: 50%;
+}
+.circles div:nth-child(2) {
+    width: 14px;
+    height: 14px;
+    background-color: transparent;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.card-info h3 {
+    font-weight: 500;
+    letter-spacing: .2rem;
+    margin-bottom: 22px;
+}
+.card-info div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-info div p {
+    text-transform: uppercase;
+    font-size: .62rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}
+
+.credit-card_info {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.credit-card_info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-cvc {
+    display: grid; 
+}
+
+.form-inputs {
+    padding: 6px 70px;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 6px;
+}
