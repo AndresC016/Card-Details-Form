@@ -21,11 +21,18 @@ body {
     display: flex;
     max-height: 100vh;
 }
+.credit-card {
+    width: 40%;
+}
+
+.aside-left {
+    height: 100%;
+}
 
 .credit-card_img {
     display: flex;
     flex-direction: column;
-    width: 340px;
+    width: 100%;
     list-style: none;
     color: var(--White);
 }
@@ -104,20 +111,54 @@ body {
 .credit-card_info {
     display: grid;
     place-content: center;
-    width: 100%;
+    width: 60%;
     height: 100vh;
 }
+
 .credit-card_info form {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 72px);
+    grid-template-rows: repeat(6, 36px) 56px;
+    column-gap: 12px;
+    row-gap: 8px;
+}
+.credit-card_info form label h4 {
+    font-size: .6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: solid;
 }
 
-.date-cvc {
-    display: grid; 
+.all-aside {
+    grid-column: 1 / 5;
+}
+
+.only-down {
+    align-self: self-end;
+    margin-bottom: 4px;
+}
+
+.cvc-part {
+    grid-column: 3 / 5;
 }
 
 .form-inputs {
-    padding: 6px 70px;
+    padding-left: 8px;
     border: 1px solid var(--Light-grayish-violet);
     border-radius: 6px;
+}
+
+.myc-input {
+    padding-left: 8px;
+    border: 1px solid var(--Light-grayish-violet);
+    border-radius: 6px;
+}
+
+.confirm-button {
+    padding: 0 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--Very-dark-violet);
+    color: var(--White);
+    margin-top: 20px;
 }

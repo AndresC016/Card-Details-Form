@@ -12,7 +12,7 @@
   <section class="interface-cont">
 
     <aside class="credit-card">
-      <img src="./images/bg-main-desktop.png" alt="">
+      <img class="aside-left" src="./images/bg-main-desktop.png" alt="">
 
       <ul class="credit-card_img">
         <li class="first-card">
@@ -45,22 +45,19 @@
 
     <aside class="credit-card_info">
       <form action="">
-        <label for="card-name">Cardholder Name</label>
-        <input class="form-inputs" id="card-name" type="text" placeholder="e.g. Jane Appleseed">
+        <label class="all-aside only-down" for="card-name"><h4>Cardholder Name</h4></label>
+        <input class="form-inputs all-aside" id="card-name" type="text" placeholder="e.g. Jane Appleseed">
 
-        <label for="card-number">Card Number</label>
-        <input class="form-inputs" id="card-number" type="text" placeholder="e.g. 1234 5678 9123 0000">
+        <label class="all-aside only-down" for="card-number"><h4>Card Number</h4></label>
+        <input class="form-inputs all-aside" id="card-number" type="text" placeholder="e.g. 1234 5678 9123 0000">
 
-        <label for="date">Exp. Date (MM/YY)</label>
-        <label for="card-number">CVC</label>
+        <label class="only-down" for="date"><h4>Exp. Date (MM/YY)</h4></label>
+        <label class="cvc-part only-down" for="card-number"><h4>CVC</h4></label>
+        <input class="myc-input" id="date" type="number" placeholder="MM">
+        <input class="myc-input" id="date" type="number" placeholder="YY">
+        <input class="cvc-part myc-input" id="card-number" type="number" placeholder="e.g. 123">
 
-        <div class="date-cvc">
-          <input class="date-inputs" id="date" type="month" placeholder="MM">
-          <input class="date-inputs" id="date" type="date" placeholder="YY">
-          <input id="card-number" type="number" placeholder="e.g. 123">
-        </div>
-
-        <input type="button" placeholder="Confirm">
+        <button class="confirm-button all-aside" type="button">Confirm</button>
       </form>
     </aside>
 
